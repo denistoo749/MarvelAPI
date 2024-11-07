@@ -1,0 +1,81 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h1>Marvel API</h1>
+
+<div>
+    <label for="entityPath">https://localhost:7274/api/:</label>
+    <input type="text" id="entityPath" placeholder="characters/1" />
+    <button id="fetchEntity" onclick="fetchEntity()">Request</button>
+</div>
+
+<div id="entityDetails" style="margin-top: 20px;"></div>
+
+<script>
+    async function fetchEntity() {
+        const entityPath = document.getElementById('entityPath').value;
+        if (!entityPath) {
+            alert('Please enter an entity path.');
+            return;
+        }
+
+        try {
+            const response = await fetch(`https://localhost:7274/api/${entityPath}`); // Update with your API URL
+            if (!response.ok) {
+                throw new Error('Entity not found');
+            }
+            const entity = await response.json();
+
+            // Check if the returned entity is an array (for lists) or a single object
+            if (Array.isArray(entity)) {
+                // Display list of entities
+                document.getElementById('entityDetails').innerHTML = `
+                        <h2>Entities List:</h2>
+                        <ul>
+                            ${entity.map(e => `<li>${e.name || e.title}</li>`).join('')}
+                        </ul>
+                    `;
+            } else {
+                // Display single entity details based on its type
+                let detailsHtml = `<h2>${entity.name || entity.title}</h2>`;
+
+                // Generalized details for different entities
+                if (entity.alias) {
+                    detailsHtml += `<p><strong>Alias:</strong> ${entity.alias}</p>`;
+                }
+                if (entity.affiliation) {
+                    detailsHtml += `<p><strong>Affiliation:</strong> ${entity.affiliation}</p>`;
+                }
+                if (entity.homePlanet) {
+                    detailsHtml += `<p><strong>Home Planet:</strong> ${entity.homePlanet}</p>`;
+                }
+                if (entity.climate) {
+                    detailsHtml += `<p><strong>Climate:</strong> ${entity.climate}</p>`;
+                }
+                if (entity.terrain) {
+                    detailsHtml += `<p><strong>Terrain:</strong> ${entity.terrain}</p>`;
+                }
+                if (entity.population) {
+                    detailsHtml += `<p><strong>Population:</strong> ${entity.population}</p>`;
+                }
+                if (entity.releaseYear) {
+                    detailsHtml += `<p><strong>Release Year:</strong> ${entity.releaseYear}</p>`;
+                }
+                if (entity.director) {
+                    detailsHtml += `<p><strong>Director:</strong> ${entity.director}</p>`;
+                }
+                if (entity.seasons) {
+                    detailsHtml += `<p><strong>Seasons:</strong> ${entity.seasons}</p>`;
+                }
+                if (entity.description) {
+                    detailsHtml += `<p><strong>Description:</strong> ${entity.description}</p>`;
+                }
+
+                document.getElementById('entityDetails').innerHTML = detailsHtml;
+            }
+        } catch (error) {
+            document.getElementById('entityDetails').innerHTML = `<p style="color:red;">${error.message}</p>`;
+        }
+    }
+</script>

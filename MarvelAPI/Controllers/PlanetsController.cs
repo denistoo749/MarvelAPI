@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MarvelApI.Data;
 using MarvelApI.Models;
+using MarvelAPI.Repositories;
 
 namespace MarvelApI.Controllers
 {
@@ -9,36 +10,36 @@ namespace MarvelApI.Controllers
     [ApiController]
     public class PlanetsController : ControllerBase
     {
-        private readonly MarvelContext _context;
+        private readonly PlanetsRepository _planetsRepository;
 
-        public PlanetsController(MarvelContext context)
+        public PlanetsController(PlanetsRepository planetsRepository)
         {
-            _context = context;
+            _planetsRepository = planetsRepository;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Planet>>> GetPlanets()
         {
-            return await _context.Planets.ToListAsync();
+            var planets = await _planetsRepository.GetPlanets();
+            return Ok(planets);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Planet>> GetPlanet(int id)
         {
-            var planet = await _context.Planets.FindAsync(id);
+            var planet = await _planetsRepository.GetPlanet(id);
             if (planet == null)
             {
                 return NotFound();
             }
-            return planet;
+            return Ok(planet);
         }
 
         [HttpPost]
         public async Task<ActionResult<Planet>> PostPlanet(Planet planet)
         {
-            _context.Planets.Add(planet);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetPlanet), new { id = planet.Id }, planet);
+            var addedPlanet = await _planetsRepository.PostPlanet(planet);
+            return CreatedAtAction(nameof(GetPlanet), new { id = addedPlanet.Id }, addedPlanet);
         }
 
         [HttpPut("{id}")]
@@ -49,21 +50,13 @@ namespace MarvelApI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(planet).State = EntityState.Modified;
+            var updateSuccessful = await _planetsRepository.PutPlanet(id, planet);
 
-            try
+            if (!updateSuccessful)
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!PlanetExists(id))
+                if (!await _planetsRepository.GetPlanet(id).ContinueWith(t => t.Result != null))
                 {
                     return NotFound();
-                }
-                else
-                {
-                    throw;
                 }
             }
 
@@ -73,21 +66,12 @@ namespace MarvelApI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeletePlanet(int id)
         {
-            var planet = await _context.Planets.FindAsync(id);
+            var planet = await _planetsRepository.DeletePlanet(id);
             if (planet == null)
             {
-                return NotFound();
+                return NotFound($"Plane Id {id} not found.");
             }
-
-            _context.Planets.Remove(planet);
-            await _context.SaveChangesAsync();
-
             return NoContent();
-        }
-
-        private bool PlanetExists(int id)
-        {
-            return _context.Planets.Any(e => e.Id == id);
         }
     }
 }

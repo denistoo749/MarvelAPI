@@ -1,6 +1,6 @@
-using MarvelApI.Data;
-using MarvelApI.Services;
 using Microsoft.EntityFrameworkCore;
+using MarvelApI.Data;
+using MarvelAPI.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,30 +10,26 @@ builder.Services.AddDbContext<MarvelContext>(options =>
                      new MySqlServerVersion(new Version(8, 0, 26))));
 
 // Register services for dependency injection
-builder.Services.AddScoped<ICharacterService, CharacterService>();
-builder.Services.AddScoped<IMovieService, MovieService>();
-builder.Services.AddScoped<IPlanetService, PlanetService>();
-builder.Services.AddScoped<ISeriesService, SeriesService>();
+builder.Services.AddScoped<CharactersRepository>();
+builder.Services.AddScoped<MoviesRepository>();
+builder.Services.AddScoped<PlanetsRepository>();
+builder.Services.AddScoped<SeriesRepository>();
 
-// Add services for controllers and Swagger
-builder.Services.AddControllers();
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+
+// Add services for controllers
+builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
 
 // Seed the database
 SeedData.Initialize(app.Services);
 
-// Configure middleware
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-
 app.UseHttpsRedirection();
 app.UseAuthorization();
 app.MapControllers();
+
+app.MapControllerRoute(
+    name: "default",
+    pattern: "{controller=Home}/{action=Index}/{id?}");
 
 app.Run();

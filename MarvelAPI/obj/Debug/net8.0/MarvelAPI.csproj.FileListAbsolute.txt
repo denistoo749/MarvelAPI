@@ -22,13 +22,9 @@ C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Microsoft.Extensions.
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Microsoft.Extensions.Logging.Abstractions.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Microsoft.Extensions.Options.dll
-C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Mono.TextTemplating.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\MySqlConnector.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Pomelo.EntityFrameworkCore.MySql.dll
-C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\System.CodeDom.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\System.Composition.AttributedModel.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\System.Composition.Convention.dll
@@ -92,7 +88,6 @@ C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.GeneratedMS
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.AssemblyInfoInputs.cache
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.AssemblyInfo.cs
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.csproj.CoreCompileInputs.cache
-C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\staticwebassets.development.json
@@ -109,3 +104,10 @@ C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.pdb
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.genruntimeconfig.cache
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\ref\MarvelAPI.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.sourcelink.json
+C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.RazorAssemblyInfo.cache
+C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.RazorAssemblyInfo.cs
+C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Microsoft.OpenApi.dll
+C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.MvcApplicationPartsAssemblyInfo.cs

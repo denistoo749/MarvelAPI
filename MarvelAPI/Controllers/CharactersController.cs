@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MarvelApI.Models;
 using MarvelApI.Data;
 using MarvelApI.DTOs;
+using MarvelAPI.Repositories;
 
 namespace MarvelApI.Controllers
 {
@@ -10,52 +11,30 @@ namespace MarvelApI.Controllers
     [ApiController]
     public class CharactersController : ControllerBase
     {
-        private readonly MarvelContext _context;
+        private readonly CharactersRepository _charactersRepository;
 
-        public CharactersController(MarvelContext context)
+        public CharactersController(CharactersRepository charactersRepository)
         {
-            _context = context;
+            _charactersRepository = charactersRepository;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<CharacterDto>>> GetCharacters()
         {
-            var characters = await _context.Characters.ToListAsync();
+            var CharacterDtos = await _charactersRepository.GetCharacters();
+            return Ok(CharacterDtos);
 
-            // Map to DTOs
-            var characterDtos = characters.Select(c => new CharacterDto
-            {
-                Id = c.Id,
-                Name = c.Name,
-                Alias = c.Alias,
-                Affiliation = c.Affiliation,
-                HomePlanetID = c.HomePlanetID, // Use HomePlanetID from Character model (ID)
-                HomePlanet = c.HomePlanet       // Use HomePlanet from Character model (Name)
-            });
-
-            return Ok(characterDtos);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<CharacterDto>> GetCharacter(int id)
         {
-            var character = await _context.Characters.FindAsync(id);
+            var characterDto = await _charactersRepository.GetCharacter(id);
 
-            if (character == null)
+            if (characterDto == null)
             {
                 return NotFound();
             }
-
-            // Map to DTO
-            var characterDto = new CharacterDto
-            {
-                Id = character.Id,
-                Name = character.Name,
-                Alias = character.Alias,
-                Affiliation = character.Affiliation,
-                HomePlanetID = character.HomePlanetID, // Use HomePlanetID from Character model (ID)
-                HomePlanet = character.HomePlanet       // Use HomePlanet from Character model (Name)
-            };
 
             return Ok(characterDto);
         }
@@ -63,58 +42,47 @@ namespace MarvelApI.Controllers
         [HttpPost]
         public async Task<ActionResult<Character>> PostCharacter(Character character)
         {
-            _context.Characters.Add(character);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetCharacter), new { id = character.Id }, character);
+            if (character == null)
+            {
+                return BadRequest("Character data is null.");
+            }
+
+            var addedCharacter = await _charactersRepository.PostCharacter(character);
+
+            return CreatedAtAction(nameof(GetCharacter), new { id = addedCharacter.Id }, addedCharacter);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> PutCharacter(int id, Character character)
+        public async Task<IActionResult> PutCharacter(int id, [FromBody] Character character)
         {
             if (id != character.Id)
             {
-                return BadRequest();
+                return BadRequest("Character ID mismatch.");
             }
 
-            _context.Entry(character).State = EntityState.Modified;
+            var updateSuccessful = await _charactersRepository.PutCharacter(id, character);
 
-            try
+            if (!updateSuccessful)
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!CharacterExists(id))
+                if (!await _charactersRepository.GetCharacter(id).ContinueWith(t => t.Result != null))
                 {
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
             }
-
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteCharacter(int id)
         {
-            var character = await _context.Characters.FindAsync(id);
-            if (character == null)
+            var deletionSuccessful = await _charactersRepository.DeleteCharacter(id);
+
+            if (!deletionSuccessful)
             {
-                return NotFound();
+                return NotFound($"Character with Id = {id} not found");
             }
 
-            _context.Characters.Remove(character);
-            await _context.SaveChangesAsync();
-
             return NoContent();
-        }
-
-        private bool CharacterExists(int id)
-        {
-            return _context.Characters.Any(e => e.Id == id);
         }
     }
 }

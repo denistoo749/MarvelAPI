@@ -2,6 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MarvelApI.Data;
 using MarvelApI.Models;
+using MarvelAPI.Repositories;
 
 namespace MarvelApI.Controllers
 {
@@ -9,23 +10,24 @@ namespace MarvelApI.Controllers
     [ApiController]
     public class SeriesController : ControllerBase
     {
-        private readonly MarvelContext _context;
+        private readonly SeriesRepository _seriesRepository;
 
-        public SeriesController(MarvelContext context)
+        public SeriesController(SeriesRepository seriesRepository)
         {
-            _context = context;
+            _seriesRepository = seriesRepository;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Series>>> GetSeries()
         {
-            return await _context.Series.ToListAsync();
+            var series =  await _seriesRepository.GetSeries();
+            return Ok(series);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Series>> GetSeries(int id)
         {
-            var series = await _context.Series.FindAsync(id);
+            var series = await _seriesRepository.GetSeries(id);
             if (series == null)
             {
                 return NotFound();
@@ -36,9 +38,8 @@ namespace MarvelApI.Controllers
         [HttpPost]
         public async Task<ActionResult<Series>> PostSeries(Series series)
         {
-            _context.Series.Add(series);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetSeries), new { id = series.Id }, series);
+            var addedSeries = await _seriesRepository.PostSeries(series);
+            return CreatedAtAction(nameof(GetSeries), new { id = addedSeries.Id }, addedSeries);
         }
 
         [HttpPut("{id}")]
@@ -49,21 +50,13 @@ namespace MarvelApI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(series).State = EntityState.Modified;
+            var updateSuccessful = await _seriesRepository.PutSeries(id, series);
 
-            try
+            if (!updateSuccessful)
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!SeriesExists(id))
+                if (!await _seriesRepository.GetSeries(id).ContinueWith(t => t.Result != null))
                 {
                     return NotFound();
-                }
-                else
-                {
-                    throw;
                 }
             }
 
@@ -73,21 +66,14 @@ namespace MarvelApI.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteSeries(int id)
         {
-            var series = await _context.Series.FindAsync(id);
-            if (series == null)
+            var deletionSuccessful = await _seriesRepository.DeleteSeries(id);
+
+            if (deletionSuccessful == null)
             {
-                return NotFound();
+                return NotFound($"Series with Id = {id} not found");
             }
 
-            _context.Series.Remove(series);
-            await _context.SaveChangesAsync();
-
             return NoContent();
-        }
-
-        private bool SeriesExists(int id)
-        {
-            return _context.Series.Any(e => e.Id == id);
         }
     }
 }

@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MarvelApI.Data;
 using MarvelApI.Models;
+using MarvelAPI.Repositories;
 
 namespace MarvelApI.Controllers
 {
@@ -9,36 +10,40 @@ namespace MarvelApI.Controllers
     [ApiController]
     public class MoviesController : ControllerBase
     {
-        private readonly MarvelContext _context;
+        private readonly MoviesRepository _moviesRepository;
 
-        public MoviesController(MarvelContext context)
+        public MoviesController(MoviesRepository moviesRepository)
         {
-            _context = context;
+            _moviesRepository = moviesRepository;
         }
 
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Movie>>> GetMovies()
         {
-            return await _context.Movies.ToListAsync();
+            var movies = await _moviesRepository.GetMovies();
+            return Ok(movies);
         }
 
         [HttpGet("{id}")]
         public async Task<ActionResult<Movie>> GetMovie(int id)
         {
-            var movie = await _context.Movies.FindAsync(id);
+            var movie = await _moviesRepository.GetMovie(id);
             if (movie == null)
             {
                 return NotFound();
             }
-            return movie;
+            return Ok(movie);
         }
 
         [HttpPost]
         public async Task<ActionResult<Movie>> PostMovie(Movie movie)
         {
-            _context.Movies.Add(movie);
-            await _context.SaveChangesAsync();
-            return CreatedAtAction(nameof(GetMovie), new { id = movie.Id }, movie);
+            if (movie == null)
+            {
+                return BadRequest("Character data is null.");
+            }
+            var addedMovie = await _moviesRepository.PostMovie(movie);
+            return CreatedAtAction(nameof(GetMovie), new { id = addedMovie.Id }, addedMovie);
         }
 
         [HttpPut("{id}")]
@@ -49,45 +54,28 @@ namespace MarvelApI.Controllers
                 return BadRequest();
             }
 
-            _context.Entry(movie).State = EntityState.Modified;
+            var updateSuccessful = await _moviesRepository.PutMovie(id, movie);
 
-            try
+            if (!updateSuccessful)
             {
-                await _context.SaveChangesAsync();
-            }
-            catch (DbUpdateConcurrencyException)
-            {
-                if (!MovieExists(id))
+                if (!await _moviesRepository.GetMovie(id).ContinueWith(t => t.Result != null))
                 {
                     return NotFound();
                 }
-                else
-                {
-                    throw;
-                }
             }
-
             return NoContent();
         }
 
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteMovie(int id)
         {
-            var movie = await _context.Movies.FindAsync(id);
-            if (movie == null)
+            var deletionSuccessful = await _moviesRepository.DeleteMovie(id);
+            if (!deletionSuccessful)
             {
-                return NotFound();
+                return NotFound($"Movie with Id = {id} not found");
             }
 
-            _context.Movies.Remove(movie);
-            await _context.SaveChangesAsync();
-
             return NoContent();
-        }
-
-        private bool MovieExists(int id)
-        {
-            return _context.Movies.Any(e => e.Id == id);
         }
     }
 }
