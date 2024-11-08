@@ -14,12 +14,16 @@ builder.Services.AddScoped<CharactersRepository>();
 builder.Services.AddScoped<MoviesRepository>();
 builder.Services.AddScoped<PlanetsRepository>();
 builder.Services.AddScoped<SeriesRepository>();
+builder.Services.AddScoped<HomeRepository>();
 
 
 // Add services for controllers
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
+
+// Enable serving static files
+app.UseStaticFiles();
 
 // Seed the database
 SeedData.Initialize(app.Services);

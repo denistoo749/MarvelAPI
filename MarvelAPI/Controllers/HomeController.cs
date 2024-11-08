@@ -1,16 +1,17 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Threading.Tasks;
 using MarvelApI.Data;
+using MarvelAPI.Repositories;
 
 namespace MarvelAPI.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly MarvelContext _context;
+        private readonly HomeRepository _homeRepository;
 
-        public HomeController(MarvelContext context)
+        public HomeController(HomeRepository homeRepository)
         {
-            _context = context;
+            _homeRepository = homeRepository;
         }
 
         // GET: Home
@@ -19,55 +20,60 @@ namespace MarvelAPI.Controllers
             return View();
         }
 
+        // GET: About
+        public IActionResult About()
+        {
+            return View();
+        }
+
         // GET: Characters/Details/{id}
         [HttpGet("characters/details/{id}")]
         public async Task<IActionResult> CharacterDetails(int id)
         {
-            var character = await _context.Characters.FindAsync(id);
+            var character = await _homeRepository.CharacterDetails(id);
             if (character == null)
             {
-                return NotFound(); // Return a 404 if the character is not found
+                return NotFound();
             }
-            return View("CharacterDetails", character); // Return a view with character details
+            return View("CharacterDetails", character);
         }
 
         // GET: Planets/Details/{id}
         [HttpGet("planets/details/{id}")]
         public async Task<IActionResult> PlanetDetails(int id)
         {
-            var planet = await _context.Planets.FindAsync(id);
+            var planet = await _homeRepository.PlanetDetails(id);
             if (planet == null)
             {
-                return NotFound(); // Return a 404 if the planet is not found
+                return NotFound();
             }
-            return View("PlanetDetails", planet); // Return a view with planet details
+            return View("PlanetDetails", planet);
         }
 
         // GET: Movies/Details/{id}
         [HttpGet("movies/details/{id}")]
         public async Task<IActionResult> MovieDetails(int id)
         {
-            var movie = await _context.Movies.FindAsync(id);
+            var movie = await _homeRepository.MovieDetails(id);
             if (movie == null)
             {
-                return NotFound(); // Return a 404 if the movie is not found
+                return NotFound();
             }
-            return View("MovieDetails", movie); // Return a view with movie details
+            return View("MovieDetails", movie);
         }
 
         // GET: Series/Details/{id}
         [HttpGet("series/details/{id}")]
         public async Task<IActionResult> SeriesDetails(int id)
         {
-            var series = await _context.Series.FindAsync(id);
+            var series = await _homeRepository.SeriesDetails(id);
             if (series == null)
             {
-                return NotFound(); // Return a 404 if the series is not found
+                return NotFound();
             }
-            return View("SeriesDetails", series); // Return a view with series details
+            return View("SeriesDetails", series);
         }
 
-        // Optional: Error action for error handling
         public IActionResult Error()
         {
             return View();

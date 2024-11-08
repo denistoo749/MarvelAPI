@@ -1,0 +1,49 @@
+/* _content/MarvelAPI/Views/Shared/_Layout.cshtml.rz.scp.css */
+/* Please see documentation at https://learn.microsoft.com/aspnet/core/client-side/bundling-and-minification
+for details on configuring this project to bundle and minify static web assets. */
+
+a.navbar-brand[b-gjf7fgatli] {
+  white-space: normal;
+  text-align: center;
+  word-break: break-all;
+}
+
+a[b-gjf7fgatli] {
+  color: #0077cc;
+}
+
+.btn-primary[b-gjf7fgatli] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.nav-pills .nav-link.active[b-gjf7fgatli], .nav-pills .show > .nav-link[b-gjf7fgatli] {
+  color: #fff;
+  background-color: #1b6ec2;
+  border-color: #1861ac;
+}
+
+.border-top[b-gjf7fgatli] {
+  border-top: 1px solid #e5e5e5;
+}
+.border-bottom[b-gjf7fgatli] {
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.box-shadow[b-gjf7fgatli] {
+  box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05);
+}
+
+button.accept-policy[b-gjf7fgatli] {
+  font-size: 1rem;
+  line-height: inherit;
+}
+
+.footer[b-gjf7fgatli] {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  white-space: nowrap;
+  line-height: 60px;
+}

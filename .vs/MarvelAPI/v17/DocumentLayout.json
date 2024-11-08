@@ -3,28 +3,52 @@
   "WorkspaceRootPath": "C:\\Users\\Denis\\source\\MarvelAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\repositories\\charactersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\repositories\\charactersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\marvelapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
       "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\marvelapi.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\views\\home\\about.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\repositories\\charactersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\repositories\\charactersrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\dtos\\characterdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -45,14 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\controllers\\characterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\controllers\\characterscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\repositories\\homerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\controllers\\planetscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -77,10 +93,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\repositories\\moviesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\repositories\\moviesrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|solutionrelative:marvelapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{19312237-739E-4CE4-AD59-029BE2B3D336}|MarvelAPI\\MarvelAPI.csproj|c:\\users\\denis\\source\\marvelapi\\marvelapi\\models\\movie.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -122,35 +134,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 11,
+          "SelectedChildIndex": 18,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "site.js",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\wwwroot\\js\\site.js",
+              "RelativeDocumentMoniker": "MarvelAPI\\wwwroot\\js\\site.js",
+              "ToolTip": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\wwwroot\\js\\site.js",
+              "RelativeToolTip": "MarvelAPI\\wwwroot\\js\\site.js",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-11-08T16:24:11.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "MarvelAPI\\wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "MarvelAPI\\wwwroot\\css\\site.css",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-11-08T16:13:11.645Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
-            },
-            {
-              "$type": "Bookmark",
               "Name": "ST:0:0:{1c64b9c2-e352-428e-a56d-0ace190b99a6}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 6,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MarvelAPI\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MarvelAPI\\Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-08T15:41:27.422Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "HomeRepository.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Repositories\\HomeRepository.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Repositories\\HomeRepository.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Repositories\\HomeRepository.cs",
               "RelativeToolTip": "MarvelAPI\\Repositories\\HomeRepository.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAUwD0AAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T08:31:43.668Z"
+              "WhenOpened": "2024-11-07T08:31:43.668Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "SeriesRepository.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Repositories\\SeriesRepository.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Repositories\\SeriesRepository.cs",
@@ -162,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "PlanetsRepository.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Repositories\\PlanetsRepository.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Repositories\\PlanetsRepository.cs",
@@ -174,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "MoviesRepository.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Repositories\\MoviesRepository.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Repositories\\MoviesRepository.cs",
@@ -186,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 4,
               "Title": "CharactersRepository.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Repositories\\CharactersRepository.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Repositories\\CharactersRepository.cs",
@@ -194,11 +246,12 @@
               "RelativeToolTip": "MarvelAPI\\Repositories\\CharactersRepository.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T17:11:06.577Z"
+              "WhenOpened": "2024-11-05T17:11:06.577Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "MarvelAPI.http",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\MarvelAPI.http",
               "RelativeDocumentMoniker": "MarvelAPI\\MarvelAPI.http",
@@ -206,11 +259,12 @@
               "RelativeToolTip": "MarvelAPI\\MarvelAPI.http",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
-              "WhenOpened": "2024-11-05T16:47:25.553Z"
+              "WhenOpened": "2024-11-05T16:47:25.553Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 11,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MarvelAPI\\Properties\\launchSettings.json",
@@ -222,19 +276,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 2,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Controllers\\HomeController.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Controllers\\HomeController.cs",
               "RelativeToolTip": "MarvelAPI\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAADQAAAAAAAAAAAAAAEkAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABcAAAAAAAAAAAA9wFEAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-05T14:58:40.903Z"
+              "WhenOpened": "2024-11-05T14:58:40.903Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 10,
               "Title": "About.cshtml",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Views\\Home\\About.cshtml",
               "RelativeDocumentMoniker": "MarvelAPI\\Views\\Home\\About.cshtml",
@@ -242,8 +297,7 @@
               "RelativeToolTip": "MarvelAPI\\Views\\Home\\About.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-11-05T14:50:38.931Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-05T14:50:38.931Z"
             },
             {
               "$type": "Document",
@@ -253,14 +307,14 @@
               "RelativeDocumentMoniker": "MarvelAPI\\Views\\Home\\Index.cshtml",
               "ToolTip": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Views\\Home\\Index.cshtml",
               "RelativeToolTip": "MarvelAPI\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAABVAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACUAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2024-11-05T14:49:31.862Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "20241103212036_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Migrations\\20241103212036_InitialCreate.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Migrations\\20241103212036_InitialCreate.cs",
@@ -272,20 +326,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Program.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Program.cs",
               "ToolTip": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Program.cs",
               "RelativeToolTip": "MarvelAPI\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-03T21:10:22.417Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\appsettings.json",
               "RelativeDocumentMoniker": "MarvelAPI\\appsettings.json",
@@ -293,11 +347,12 @@
               "RelativeToolTip": "MarvelAPI\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-03T21:10:11.934Z"
+              "WhenOpened": "2024-11-03T21:10:11.934Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "SeriesController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Controllers\\SeriesController.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Controllers\\SeriesController.cs",
@@ -309,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "PlanetsController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Controllers\\PlanetsController.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Controllers\\PlanetsController.cs",
@@ -321,7 +376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "MoviesController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Controllers\\MoviesController.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Controllers\\MoviesController.cs",
@@ -333,7 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "MarvelAPI.csproj",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\MarvelAPI.csproj",
               "RelativeDocumentMoniker": "MarvelAPI\\MarvelAPI.csproj",
@@ -345,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Series.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Models\\Series.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Models\\Series.cs",
@@ -357,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Planet.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Models\\Planet.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Models\\Planet.cs",
@@ -369,7 +424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Movie.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Models\\Movie.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Models\\Movie.cs",
@@ -381,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "Character.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Models\\Character.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Models\\Character.cs",
@@ -393,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "MovieDto.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\DTOs\\MovieDto.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\DTOs\\MovieDto.cs",
@@ -405,7 +460,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "SeriesDto.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\DTOs\\SeriesDto.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\DTOs\\SeriesDto.cs",
@@ -417,7 +472,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "PlanetDto.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\DTOs\\PlanetDto.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\DTOs\\PlanetDto.cs",
@@ -429,7 +484,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "CharacterDto.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\DTOs\\CharacterDto.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\DTOs\\CharacterDto.cs",
@@ -441,7 +496,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "SeedData.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Data\\SeedData.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Data\\SeedData.cs",
@@ -453,7 +508,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "MarvelContext.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Data\\MarvelContext.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Data\\MarvelContext.cs",
@@ -465,7 +520,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "CharactersController.cs",
               "DocumentMoniker": "C:\\Users\\Denis\\source\\MarvelAPI\\MarvelAPI\\Controllers\\CharactersController.cs",
               "RelativeDocumentMoniker": "MarvelAPI\\Controllers\\CharactersController.cs",

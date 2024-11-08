@@ -111,3 +111,4 @@ C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCor
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\Denis\source\MarvelAPI\MarvelAPI\obj\Debug\net8.0\MarvelAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\Denis\source\MarvelAPI\MarvelAPI\bin\Debug\net8.0\MarvelAPI.staticwebassets.runtime.json
